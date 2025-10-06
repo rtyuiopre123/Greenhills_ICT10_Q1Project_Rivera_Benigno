@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>67th Avenue | Order Now</title>
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <h2>67th Avenue</h2>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="order.html" class="active">Order Now</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Food Ordering System</h2>
+        <form>
+            <p><strong>Menu:</strong></p>
+            <label><input type="checkbox" id="carbonara" value="79.99"> Carbonara (₱79.99)</label><br>
+            <label><input type="checkbox" id="garlic" value="50"> Garlic Bread (₱50.00)</label><br>
+            <label><input type="checkbox" id="salad" value="150"> Caesar Salad (₱150.00)</label><br>
+            <label><input type="checkbox" id="icedtea" value="30"> Iced Tea (₱30.00)</label><br>
+            <label><input type="checkbox" id="water" value="20"> Sparkling Water (₱20.00)</label><br><br>
+
+            <p><strong>Customer Details:</strong></p>
+            <input type="text" id="cust_name" placeholder="Enter Name"><br>
+            <input type="text" id="cust_address" placeholder="Enter Address"><br>
+            <input type="text" id="cust_contact" placeholder="Enter Contact Number"><br>
+
+            <input type="button" py-click="create_order" value="Create Order" class="btn">
+        </form>
+
+        <div id="output" class="output-box"></div>
+        <a href="index.html"><button class="back-btn">Back to Home</button></a>
+    </div>
+
+    <py-script src="main.py"></py-script>
+</body>
+</html>
